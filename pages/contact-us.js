@@ -1,9 +1,7 @@
-import Layout from "../src/components/layout";
-
 export default function ContactUs() {
     return (
-        <Layout>
-            <section className="text-gray-600 body-font relative">
+        <div>
+            <div className="text-gray-600 body-font relative">
                 <div className="absolute inset-0 bg-gray-300">
                     <iframe 
                         width={"100%"} 
@@ -33,8 +31,8 @@ export default function ContactUs() {
                     <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
                     </div>
                 </div>
-            </section>
-        </Layout>
+            </div>
+        </div>
     )
 }
 
