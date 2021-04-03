@@ -13,7 +13,7 @@ class MyDocument extends Document {
 
       <Html>
         <Head lang="en"/>
-        <body className="antialiased bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 ng-no-repeat text-white">
+        <body className="antialiased bg-gradient-to-bl from-gray-900 via-gray-800 to-gray-900 ng-no-repeat text-white">
           <Main />
           <NextScript />
         </body>

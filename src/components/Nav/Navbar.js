@@ -1,18 +1,21 @@
 
 
 import { useMediaQuery } from "react-responsive";
+import { Data } from "../../data/Data";
 import { DeviceSize } from "../responsive";
 import MobileNavLinks from './MobileNavLinks';
 import Nav from "./Nav";
 
 const Navbar = () => {
     const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile});
+    const data = Data
+    
     return (
 
         <div className="container-fluid flex-1 flex justify-between items-center pl-6 pr-6 lg:pl-20 lg:pr-20">
             <div className="justify-start">
                 <a className="title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                    <img src="https://res.cloudinary.com/makarim/image/upload/v1617242624/mirLogo-w_gxxuhk.png" alt="Mir Logo"
+                    <img src={data.logo} alt="Mir Logo"
                         className="text-white p-2 rounded-full w-14" />
                 </a>
             </div>

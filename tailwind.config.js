@@ -31,6 +31,9 @@ module.exports = {
     minHeight: {
 			'60vh': '60vh'
 		},
+    headerHight: {
+      '600vh': '600vh'
+    },
 		extend: {
 			animation: {
 				spin: 'spin 8s linear infinite'
