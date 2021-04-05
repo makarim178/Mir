@@ -1,6 +1,6 @@
 const Course = ({course}) => {
     return (
-        <div className="bg-white bg-opacity-10 m-1 rounded-lg shadow-md">
+        <div className="bg-white bg-opacity-10 m-1 rounded-lg shadow-md" style={{backdropFilter:"blur(5px)"}}>
             <div className="p-2 md:p-5 w-30"> 
                 <p className="text-sm">{course.courseName}</p>  
                     <div className="w-30">

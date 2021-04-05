@@ -3,7 +3,7 @@ import { Data } from "../../data/Data";
 
 const About = () => {
     return (
-        <>
+        <div>
             {/* <svg className="fixed"
                 xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 1440 300"
@@ -14,7 +14,7 @@ const About = () => {
                     d="M0,128L120,154.7C240,181,480,235,720,256C960,277,1200,267,1320,261.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
                 />
             </svg> */}
-            <div>
+            <div id="about">
                 <h1 className="text-2xl md:text-4xl text-center p-5 mt-5">About <span className="font-bold text-blue-400 border-b-2  md:border-b-4 border-blue-400">{Data.firstName_mir}</span></h1>
 
                 <div className="flex flex-col md:flex-row justify-between items-center">
@@ -27,7 +27,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

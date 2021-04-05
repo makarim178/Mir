@@ -22,7 +22,7 @@ const Card = ({experience}) => {
                         </h1>                    
                 </div>
                 
-                <div className="md:order-1 bg-gray-400 rounded-lg shadow-xl w-11/12 md:w-5/12 px-6 py-4" >
+                <div className="md:order-1 bg-gray-400 rounded-lg shadow-xl w-11/12 md:w-5/12 px-6 py-4 bg-opacity-60" style={{backdropFilter:"blur(5px)"}} >
                   <div className="mb-3">
                     <div className="flex justify-between">
                         <div>
@@ -45,7 +45,7 @@ const Card = ({experience}) => {
                       
                     </h5>
                   </div>
-                  <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+                  <div className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
                     <ul className="list-disc list-inside text-sm ">
                       {experience.jobDesc.map(job => {
                         return(
@@ -53,7 +53,7 @@ const Card = ({experience}) => {
                         )
                       })}
                     </ul>
-                  </p>
+                  </div>
                 </div>
               </div>
     )

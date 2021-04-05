@@ -5,7 +5,7 @@ import EducationSingle from "./EducationSingle";
 const Education = () => {
     
     return (
-        <div>
+        <div id="edu">
                 {/* <h1 className="text-2xl md:text-4xl text-center p-5 mt-5">
                     <span className="font-bold border-b-2  md:border-b-4 border-blue-400">Education
                     </span>

@@ -3,7 +3,7 @@ import Course from "./Course";
 
 const EducationSingle = ({edu}) => {
     return (
-        <div className="bg-gray-400 bg-opacity-10 rounded-xl m-4" style={{backdropFilter: "blur(5px)"}} >
+        <div className="z-10 bg-gray-400 bg-opacity-10 rounded-xl m-4" >
             <div className="p-6">
                 <div className="flex flex-row mx-auto justify-between">
                     <div>

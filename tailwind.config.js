@@ -865,6 +865,8 @@ module.exports = {
     zIndex: ['responsive', 'focus-within', 'focus'],
     extend: {
 			animation: ['hover', 'group-hover'],
+      translate: ['group-hover'],
+      scale: ['group-hover']
 		}
   },
   plugins: [

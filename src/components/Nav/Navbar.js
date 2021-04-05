@@ -6,30 +6,55 @@ import { DeviceSize } from "../responsive";
 import MobileNavLinks from './MobileNavLinks';
 import Nav from "./Nav";
 
+import { animateScroll as scroll } from "react-scroll";
+
 const Navbar = () => {
     const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile});
     const data = Data
     
     return (
 
-        <div className="container-fluid flex-1 flex justify-between items-center pl-6 pr-6 lg:pl-20 lg:pr-20">
+        <div className="container-fluid flex justify-between items-center px-6 lg:px-20 bg-blue-900 bg-opacity-20 z-auto" style={{filter:"none"}}>
             <div className="justify-start">
-                <a className="title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                    <img src={data.logo} alt="Mir Logo"
-                        className="text-white p-2 rounded-full w-14" />
+                <a onClick={() => scroll.scrollToTop()} className="title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer">
+                    <img src={data.logo} alt="Mir Logo" className="text-white p-2 rounded-full w-14" />
                 </a>
             </div>
 
             <div className="justify-end">
-                <div className="h-full flex items-center mx-auto">
-                    { !isMobile && <Nav />}
-                    { isMobile && 
-                    <MobileNavLinks />
-                    } 
-                </div>
+                <div className="justify-end ">
+                    <div className="h-full flex items-center mx-auto">
+                        { !isMobile && <Nav />}
+                        { isMobile && 
+                        <MobileNavLinks />
+                        } 
+                    </div>
 
+                </div>
             </div>
+
         </div>
+
+        // <div className="container-fluid flex justify-center items-center pl-6 pr-6 lg:pl-20 lg:pr-20">
+            
+        //         <div className="justify-start">
+        //             <a className="title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        //                 <img src={data.logo} alt="Mir Logo"
+        //                     className="text-white p-2 rounded-full w-14" />
+        //             </a>
+        //         </div>
+                // <div className="justify-end ">
+                //     <div className="h-full flex items-center mx-auto">
+                //         { !isMobile && <Nav />}
+                //         { isMobile && 
+                //         <MobileNavLinks />
+                //         } 
+                //     </div>
+
+                // </div>
+
+            
+        // </div>
 
         // <div className="flex-1 flex justify-between items-center">
         //     <Link href="/">
