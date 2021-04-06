@@ -1,16 +1,3 @@
-// import Nylas from "nylas";
-
-//import Email from "./email";
-
-
-
-
-
-// Nylas.config({
-//     clientId: "5o3lt6saqxphou04o7rblkm5c",
-//     clientSecret: "ah4pbx98svvx0xrc32nwbkrtm"
-// })
-
 
 const ContactForm = () => {
     
@@ -20,28 +7,7 @@ const ContactForm = () => {
     function sendEmail(e) {
 
         alert('Thank you for contacting me, I will get back with you shortly!');
-        // console.log(e);
-        // e.preventDefault();
-
-        // new Email(e.email, e.name, e.subject, e.message).sendMagicLink();
         
-        // const nylas = Nylas.with("fm2digMt3l0xLzDy1xnzBcm2H4P49V")
-        // const draft = nylas.drafts.build({
-        //     subject: "One Email API to Rule them all",
-        //     body: "keep it secret, keep it safe... ",
-        //     to: [{name: "My Nylas Friend", email: "makarim178@gmail.com"}, {name: "host", email: "makarim178@yahoo.com"}]
-        // })
-
-        // draft.send().then(message => console.log(message))
-
-        
-
-        // emailjs.sendForm('gmail', 'template_r93ll9h', e.target, 'user_tf8WpLE2KDwJVML808vN7')
-        // .then((result) => {
-        //     console.log(result.text);
-        // }, (error) => {
-        //     console.log(error.text);
-        // });
 
         e.target.reset();
     }
